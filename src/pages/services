@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Page.astro'; // Import your main layout
+// You might also want to import HeroSection, TextSection etc., if using them
+// import HeroSection from '../components/sections/heros/HeroSection.astro';
+// import { TextSection } from '@components/odyssey-theme';
+
+const seo = {
+    title: 'Services | Astro Odyssey Theme', // Page title for browser tab
+    description: 'Discover the services we offer.', // Page description for search engines
+};
+---
+
+<Layout {seo}>
+  <main>
+    <h1>Our Services</h1>
+    <p>This is where you'll describe the amazing services your company provides.</p>
+    <p>We offer:</p>
+    <ul>
+      <li>Web Design & Development</li>
+      <li>Digital Marketing</li>
+      <li>Content Creation</li>
+    </ul>
+    <p>Contact us today to learn more!</p>
+  </main>
+</Layout>
